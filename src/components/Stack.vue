@@ -112,7 +112,7 @@ const selectTech = (key, event) => {
                   <span class="text-slate-200 text-lg w-12 text-right font-medium">{{ techContent[activeTech].skill }}%</span>
                 </div>
 
-                <div class="flex items-center gap-4">
+                <div class="flex items-start gap-4">
                   <span class="text-slate-200 text-xl font-medium w-20 shrink-0 capitalize">Desc :</span>
                   <p class="text-slate-200 text-xl leading-relaxed w-full">
                     {{ techContent[activeTech].desc }}
