@@ -3,15 +3,34 @@ import { ref } from 'vue'
 
 const activeTech = ref('Vscode')
 const techContent = {
-  Vscode: { name: 'Visual Studio Code', desc: 'My primary code editor for development.', icon: 'https://skillicons.dev/icons?i=vscode' },
-  git: { name: 'Git', desc: 'Version control system for tracking changes in source code during development.', icon: 'https://skillicons.dev/icons?i=git' },
-  github: { name: 'GitHub', desc: 'Platform for version control and collaboration.', icon: 'https://skillicons.dev/icons?i=github' },
-  docker: { name: 'Docker', desc: 'Platform for containerizing applications.', icon: 'https://skillicons.dev/icons?i=docker' },
-  mysql: { name: 'MySQL', desc: 'Relational database management system.', icon: 'https://skillicons.dev/icons?i=mysql' },
-  postgresql: { name: 'PostgreSQL', desc: 'Advanced open-source relational database.', icon: 'https://skillicons.dev/icons?i=postgresql' },
-  redis: { name: 'Redis', desc: 'In-memory data structure store, used as a database, cache, and message broker.', icon: 'https://skillicons.dev/icons?i=redis' },
-  npm: { name: 'npm', desc: 'Package manager for Node.js and dependencies management.', icon: 'https://skillicons.dev/icons?i=npm' },
-  postman: { name: 'Postman', desc: 'API development and testing tool.', icon: 'https://skillicons.dev/icons?i=postman' }   
+  Vscode: { 
+    name: 'Visual Studio Code', 
+    desc: 'My primary code editor for development.', 
+    icon: 'https://skillicons.dev/icons?i=vscode' },
+  git: { 
+    name: 'Git', 
+    desc: 'Version control system for tracking changes in source code during development.', 
+    icon: 'https://skillicons.dev/icons?i=git' },
+  github: { 
+    name: 'GitHub', 
+    desc: 'Platform for version control and collaboration.', 
+    icon: 'https://skillicons.dev/icons?i=github' },
+  mysql: { 
+    name: 'MySQL', 
+    desc: 'Relational database management system.', 
+    icon: 'https://skillicons.dev/icons?i=mysql' },
+  postgresql: { 
+    name: 'PostgreSQL', 
+    desc: 'Advanced open-source relational database.', 
+    icon: 'https://skillicons.dev/icons?i=postgresql' },
+  npm: { 
+    name: 'npm', 
+    desc: 'Package manager for Node.js and dependencies management.', 
+    icon: 'https://skillicons.dev/icons?i=npm' },
+  postman: { 
+    name: 'Postman', 
+    desc: 'API development and testing tool.', 
+    icon: 'https://skillicons.dev/icons?i=postman' }   
 }
 
 const selectTech = (key, event) => {
