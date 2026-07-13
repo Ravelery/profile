@@ -102,7 +102,7 @@ const selectTech = (key, event) => {
               </h4>
               <div class="flex flex-col gap-5 w-full text-left">
                 <div class="flex items-center gap-4">
-                  <span class="text-slate-200 text-xl font-medium w-20 shrink-0 capitalize">Skill :</span>
+                  <span class="text-slate-200 text-lg font-medium w-20 shrink-0 capitalize">Skill :</span>
                   <div class="flex-grow h-4 bg-white overflow-hidden flex items-center rounded-sm">
                     <div 
                       :class="`h-full ${techContent[activeTech].color} transition-all duration-700 ease-out`" 
@@ -113,8 +113,8 @@ const selectTech = (key, event) => {
                 </div>
 
                 <div class="flex items-start gap-4">
-                  <span class="text-slate-200 text-xl font-medium w-20 shrink-0 capitalize">Desc :</span>
-                  <p class="text-slate-200 text-xl leading-relaxed w-full">
+                  <span class="text-slate-200 text-lg font-medium w-20 shrink-0 capitalize">Desc :</span>
+                  <p class="text-slate-200 text-lg leading-relaxed w-full">
                     {{ techContent[activeTech].desc }}
                   </p>
                 </div>
