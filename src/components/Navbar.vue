@@ -8,9 +8,9 @@ const isOpen = ref(false)
   <nav class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
     <div class="max-w-screen mx-auto px-6 py-4 flex justify-between items-center relative">
       
-      <div class="font-bold text-3xl text-blue-500 tracking-wider">MyPortofolio<span class="text-white">.</span></div>
+      <div class="font-bold text-3xl px-16 text-blue-500 tracking-wider">MyPortofolio<span class="text-white">.</span></div>
       
-      <div class="hidden sm:flex gap-6 text-lg font-medium">
+      <div class="hidden sm:flex gap-6 px-8 text-lg font-medium">
         <a href="#hero" class="hover:text-blue-400 transition-colors">Home</a>
         <a href="#info" class="hover:text-blue-400 transition-colors">Info</a>
         <a href="#stack" class="hover:text-blue-400 transition-colors">Stack</a>
