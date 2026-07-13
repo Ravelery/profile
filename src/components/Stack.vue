@@ -20,7 +20,7 @@ const techContent = {
   },
   node: { 
     name: 'Node.js', 
-    skill: 40,
+    skill: 50,
     color: 'bg-green-500',
     desc: 'Support stack used for real-time systems and scalable backend architectures.', 
     icon: 'https://skillicons.dev/icons?i=nodejs' 
@@ -34,7 +34,7 @@ const techContent = {
   },
   go: { 
     name: 'Go (Golang)', 
-    skill: 40,
+    skill: 45,
     color: 'bg-cyan-500',
     desc: 'Support stack used for building high-performance and concurrent services.', 
     icon: 'https://skillicons.dev/icons?i=go' 
