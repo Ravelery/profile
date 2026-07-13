@@ -77,12 +77,19 @@ const selectTech = (key, event) => {
 
 <template>
   <section id="stack" class="scroll-mt-24">
-    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
-      <span class="w-8 h-1 bg-blue-500 rounded-full"></span> Tech Stack
-    </h3>
-    
+    <div class="mb-10">
+      <h3 class="text-lg md:text-xl text-blue-500 font-semibold tracking-wide uppercase mb-2">
+        Tech Stack
+      </h3>
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <h2 class="text-xl md:text-2xl font-extrabold text-white tracking-tight">
+          Tech that i learn and use
+        </h2>
+      </div>
+      <div class="w-full h-px bg-slate-800 mt-6"></div>
+    </div>
     <div class="bg-slate-800 p-6 md:p-8 rounded-3xl border border-slate-700 flex flex-col gap-8 items-center">
-      <div class="flex flex-nowrap overflow-x-auto gap-6 w-full pb-6 pt-2 px-4 snap-x snap-mandatory custom-scrollbar">
+      <div class="flex flex-nowrap overflow-x-auto gap-6 w-fit w-max-full mx-auto pb-6 pt-2 px-4 snap-x snap-mandatory custom-scrollbar">
         <button 
           v-for="(tech, key) in techContent" 
           :key="key" 

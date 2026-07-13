@@ -24,9 +24,17 @@ const getTechColor = (techName) => {
 
 <template>
   <section id="projects" class="scroll-mt-24">
-    <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
-      <span class="w-8 h-1 bg-teal-500 rounded-full"></span> Projects
-    </h3>
+    <div class="mb-10">
+      <h3 class="text-lg md:text-xl text-blue-500 font-semibold tracking-wide uppercase mb-2">
+        Projects
+      </h3>
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <h2 class="text-xl md:text-2xl font-extrabold text-white tracking-tight">
+          Projects I've worked on
+        </h2>
+      </div>
+      <div class="w-full h-px bg-slate-800 mt-6"></div>
+    </div>
     
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div v-for="project in projects" :key="project.id" class="bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700/50 flex flex-col justify-between hover:border-teal-500/50 hover:-translate-y-1 transition-all duration-300 group">

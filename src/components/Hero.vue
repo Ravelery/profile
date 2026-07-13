@@ -50,8 +50,8 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section id="hero" class="max-w-9xl mx-auto px-4 text-white">
-    <div class="text-left sm:text-left w-full">
+  <section id="hero" class="max-w-9xl mx-auto text-white">
+    <div class="text-left w-full">
       <div class="grid w-full justify-items-start mb-2 min-h-[80px]">
         <h2 class="col-start-1 row-start-1 text-[clamp(1.75rem,5vw,3rem)] font-bold pb-2 leading-relaxed">
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300">
