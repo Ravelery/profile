@@ -1,7 +1,7 @@
 <script setup>
 import { ref, nextTick } from 'vue'
 
-const activeService = ref(1)
+const activeService = ref(2)
 
 const services = ref([
   {
@@ -26,7 +26,6 @@ const services = ref([
 
 const getZIndexClass = (id) => {
   if (activeService.value === id) return 'z-30'
-  // Cek selisih jarak id item dengan id yang lagi aktif
   const diff = Math.abs(activeService.value - id)
   if (diff === 1) return 'z-20'
   return 'z-10'
@@ -68,18 +67,19 @@ const selectService = async (id, event) => {
       </div>
       <div class="w-full h-px bg-slate-800 mt-5"></div>
     </div>
-
-    <div class="relative flex flex-row justify-start lg:justify-center items-center py-8 lg:py-12 overflow-x-auto overflow-y-visible px-4 w-full custom-scrollbar">
+    <div class="relative flex flex-row justify-start lg:justify-center items-center py-10 overflow-x-auto overflow-y-visible px-8 w-full custom-scrollbar">
+      
       <div 
         v-for="(service, index) in services" 
         :key="service.id" 
         @click="selectService(service.id, $event)" 
         :class="[
-          'cursor-pointer transition-all duration-500 ease-out rounded-2xl p-6 w-[280px] md:w-[320px] lg:w-1/3 flex flex-col shrink-0',
-          index !== 0 ? '-ml-20 lg:ml-6' : '',
-          getZIndexClass(service.id), /* <-- Panggil fungsinya di sini */
+          'cursor-pointer transition-all duration-500 ease-out rounded-2xl p-6 w-[280px] md:w-[320px] lg:w-1/3 flex flex-col shrink-0 snap-center',
+          index === 0 ? 'ml-4 lg:ml-0' : '-ml-20 lg:ml-6',
+          index === services.length - 1 ? 'mr-4 lg:mr-0' : '',
+          getZIndexClass(service.id),
           activeService === service.id 
-            ? 'scale-105 bg-slate-800 border border-blue-500 shadow-[0_0_30px_rgba(59,130,246,0.2)] opacity-100' 
+            ? 'scale-[1.03] bg-slate-800 border border-blue-500 shadow-[0_0_30px_rgba(59,130,246,0.2)] opacity-100' 
             : 'scale-95 lg:scale-100 bg-slate-900 border border-slate-700 shadow-xl opacity-60 hover:opacity-100 hover:-translate-y-2'
         ]"
       >
@@ -88,16 +88,20 @@ const selectService = async (id, event) => {
             <path stroke-linecap="round" stroke-linejoin="round" :d="service.icon" />
           </svg>
         </div>
+        
         <h3 :class="['text-lg md:text-xl font-bold mb-2 transition-colors duration-300 leading-snug', activeService === service.id ? 'text-blue-400' : 'text-white']">
           {{ service.title }}
         </h3>
+        
         <p :class="['text-sm leading-relaxed flex-grow transition-colors duration-300', activeService === service.id ? 'text-slate-200' : 'text-slate-400']">
           {{ service.desc }}
         </p>
       </div>
+      
     </div>
   </section>
 </template>
+
 <style scoped>
 .custom-scrollbar::-webkit-scrollbar { 
   height: 4px; 
