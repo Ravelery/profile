@@ -5,20 +5,20 @@ const services = ref([
   {
     id: 1,
     title: 'Backend Web Development',
-    desc: 'Membangun arsitektur server-side yang tangguh, aman, dan efisien menggunakan Laravel, Node.js, atau Go.',
+    desc: 'Creating server-side and web architecture using Laravel, Node.js, or Go.',
     icon: 'M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01'
   },
   {
     id: 2,
     title: 'Frontend Web Development',
-    desc: 'Membangun antarmuka pengguna yang responsif dan interaktif menggunakan Tailwind CSS, dan Vue.js.',
+    desc: 'Creating responsiveand interactive UI using Tailwind CSS, dan Vue.js.',
     icon: 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z' 
   },
   {
     id: 3,
     title: 'Database Management',
-    desc: 'Merancang skema relasional, optimasi query, dan manajemen database menggunakan MySQL & PostgreSQL.',
-    icon: 'M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4' // Icon Database
+    desc: 'Designing relasional schema, optimaling query, and managment database using MySQL & PostgreSQL.',
+    icon: 'M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4'
   }
 ])
 </script>
@@ -40,6 +40,7 @@ const services = ref([
       </div>
       <div class="w-full h-px bg-slate-800 mt-5"></div>
     </div>
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div 
         v-for="service in services" 

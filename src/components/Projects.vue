@@ -2,9 +2,21 @@
 import { ref } from 'vue'
 
 const projects = ref([
-  { id: 1, title: 'Inventory Management', desc: 'Aplikasi manajemen inventaris dengan fitur pencarian dan filter.', tech: ['Laravel', 'Tailwind', 'PhP', 'Node.js'], link: 'https://github.com/Ravelery/Nemira-Inventory.git'},
-  { id: 2, title: 'Task Manager', desc: 'Aplikasi manajemen tugas harian dengan sistem input.', tech: ['Vue.js', 'Tailwind', 'Node.js'], link: '#' },
-  { id: 3, title: 'Kalkulator Sederhana', desc: 'Aplikasi kalkulator sederhana dengan fitur dasar.', tech: ['Python', 'NumPy'], link: 'https://github.com/Ravelery/Calculator.git' }
+  { id: 1, 
+    title: 'Inventory Management', 
+    desc: 'Website for inventory management to store all your item.', 
+    tech: ['Laravel', 'Tailwind', 'PhP', 'Node.js'], 
+    link: 'https://github.com/Ravelery/Nemira-Inventory.git'},
+  { id: 2, 
+    title: 'Task Manager', 
+    desc: 'Website to manage your task and keep all tracks.', 
+    tech: ['Vue.js', 'Tailwind', 'Node.js'], 
+    link: '#' },
+  { id: 3, 
+    title: 'Calculator', 
+    desc: 'A simple calculator app build on python.', 
+    tech: ['Python', 'NumPy'], 
+    link: 'https://github.com/Ravelery/Calculator.git' }
 ])
 
 const getTechColor = (techName) => {

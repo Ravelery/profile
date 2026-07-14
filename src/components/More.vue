@@ -49,9 +49,9 @@ const educations = ref([
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
               </svg>
               <h4 class="text-xl font-bold text-white leading-tight">Sertifikat Lomba SemiFinal Cerdas Cermat IT</h4>
-              <p class="text-slate-400 text-sm mt-1 mb-2">Tingkat Nasional</p>
+              <p class="text-slate-400 text-sm mt-1 mb-2">National Level</p>
               <p class="text-slate-400 text-sm leading-relaxed">
-                Peserta semifinal Lomba Cerdas Cermat IT tingkat nasional dalam acara SITEFEST 4.0 oleh BEM Primakara University.
+                Participant of IT quiz competition on semifinal at national level in SITEFEST 4.0 event By Primakara University.
               </p>
             </div>
           </div>
