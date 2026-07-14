@@ -33,7 +33,7 @@ const educations = ref([
               <div class="absolute w-4 h-4 bg-cyan-400 rounded-full -left-[9.5px] top-1.5 shadow-[0_0_10px_rgba(34,211,238,0.5)]"></div>
               <h4 class="text-xl font-bold text-white">{{ edu.school }}</h4>
               <p class="text-slate-300 mt-1">{{ edu.major }}</p>
-              <p class="text-teal-600/80 text-sm mt-1 font-medium">
+              <p class="text-teal-400 text-sm mt-1 font-medium">
                 {{ edu.date }}
               </p>
             </div>
