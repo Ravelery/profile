@@ -1,7 +1,7 @@
 <script setup>
 import { ref, nextTick } from 'vue'
 
-const activeService = ref(2)
+const activeService = ref(1)
 
 const services = ref([
   {
