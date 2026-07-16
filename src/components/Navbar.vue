@@ -7,7 +7,6 @@ const isOpen = ref(false)
 <template>
   <nav class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
     <div class="max-w-screen mx-auto px-6 py-4 flex justify-between items-center relative">
-      
       <div class="font-bold text-3xl ps-px text-blue-500 tracking-wider">MyPortofolio<span class="text-white">.</span></div>
       
       <div class="hidden sm:flex gap-6 px-8 text-lg font-medium">
@@ -17,7 +16,6 @@ const isOpen = ref(false)
         <a href="#services" class="hover:text-blue-400 transition-colors">Services</a>
         <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
         <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
-
       </div>
 
       <button @click="isOpen = !isOpen" class="sm:hidden text-slate-300 hover:text-white focus:outline-none transition-colors">
@@ -38,11 +36,9 @@ const isOpen = ref(false)
             <a href="#services" @click="isOpen = false" class="block px-4 py-3 rounded-xl hover:bg-slate-700 hover:text-blue-400 transition-all text-left">Services</a>
             <a href="#projects" @click="isOpen = false" class="block px-4 py-3 rounded-xl hover:bg-slate-700 hover:text-blue-400 transition-all text-left">Projects</a>
             <a href="#contact" @click="isOpen = false" class="block px-4 py-3 rounded-xl hover:bg-slate-700 hover:text-blue-400 transition-all text-left">Contact</a>
-
           </div>
         </div>
       </transition>
-
     </div>
   </nav>
 </template>
