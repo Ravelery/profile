@@ -19,7 +19,7 @@ const services = ref([
   {
     id: 3,
     title: 'Database Management',
-    desc: 'Designing relational and managing databases using MySQL dan PostgreSQL.',
+    desc: 'Designing relational and managing databases using MySQL and PostgreSQL.',
     icon: 'M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4'
   }
 ])
